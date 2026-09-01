@@ -1,0 +1,277 @@
+.page-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.topbar {
+  margin-bottom: 24px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.06em;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e7eaf1;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.08);
+  padding: 22px;
+}
+
+.customer-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #50607a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+select,
+input,
+button {
+  font: inherit;
+}
+
+select,
+input {
+  width: 100%;
+  border: 1px solid #d9dfeb;
+  border-radius: 10px;
+  background: #f7f9fc;
+  padding: 0.85rem 0.95rem;
+  color: #162033;
+  box-sizing: border-box;
+}
+
+select:focus,
+input:focus {
+  outline: 3px solid rgba(37, 99, 235, 0.15);
+  border-color: #4c80ff;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: 700;
+  padding: 0.9rem 1.1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.stat-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  border: 1px solid #e5ecff;
+  border-radius: 18px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.muted-card {
+  background: linear-gradient(180deg, #fffdf4 0%, #fffaf0 100%);
+  border-color: #f0dfac;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #586983;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stat-card strong {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  color: #111827;
+}
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tier-badge.silver {
+  background: #edf2ff;
+  color: #294fbb;
+}
+
+.tier-badge.gold {
+  background: #fff2c9;
+  color: #7a5400;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.action-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.action-panel h2,
+.history-panel h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.stack-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reward-hint {
+  color: #4d5e7a;
+  font-size: 0.82rem;
+  margin-top: -4px;
+}
+
+.status-banner {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.status-banner.success {
+  background: #e8f9ee;
+  color: #146c43;
+  border: 1px solid #bbedd0;
+}
+
+.status-banner.error {
+  background: #fff1f2;
+  color: #a63040;
+  border: 1px solid #f7c6ce;
+}
+
+.history-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.muted-text {
+  color: #5f6f89;
+  margin: 0;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-row {
+  border: 1px solid #ebf0f8;
+  background: #fafcff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.history-type {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.history-type.earn {
+  background: #e6f7ed;
+  color: #146c43;
+}
+
+.history-type.redeem {
+  background: #fff2f3;
+  color: #ad3f4d;
+}
+
+.points-positive {
+  color: #146c43;
+  font-weight: 800;
+}
+
+.points-negative {
+  color: #ad3f4d;
+  font-weight: 800;
+}
+
+.history-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #5a6982;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .stats-grid,
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-main,
+  .history-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
