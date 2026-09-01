@@ -1,7 +1,8 @@
 INSERT INTO customers (id, name, redeemable_balance, lifetime_earned)
 VALUES
-  ('11111111-1111-4111-8111-111111111111', 'Silver Customer', 0, 0),
-  ('22222222-2222-4222-8222-222222222222', 'Gold Customer', 0, 0);
+  ('11111111-1111-4111-8111-111111111111', 'Customer One', 0, 0),
+  ('22222222-2222-4222-8222-222222222222', 'Customer Two', 0, 4990),
+  ('33333333-3333-4333-8333-333333333333', 'Customer Three', 0, 5000);
 
 INSERT INTO rewards (id, name, points_cost)
 VALUES

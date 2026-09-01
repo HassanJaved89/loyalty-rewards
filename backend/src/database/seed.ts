@@ -5,15 +5,21 @@ import { Pool } from 'pg';
 const CUSTOMER_SEED = [
   {
     id: '11111111-1111-4111-8111-111111111111',
-    name: 'Silver Customer',
+    name: 'Customer One',
     redeemable_balance: 0,
     lifetime_earned: 0,
   },
   {
     id: '22222222-2222-4222-8222-222222222222',
-    name: 'Gold Customer',
+    name: 'Customer Two',
     redeemable_balance: 0,
-    lifetime_earned: 0,
+    lifetime_earned: 4990,
+  },
+  {
+    id: '33333333-3333-4333-8333-333333333333',
+    name: 'Customer Three',
+    redeemable_balance: 0,
+    lifetime_earned: 5000,
   },
 ] as const;
 
